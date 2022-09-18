@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: 'Montserrat', Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text-titulo{
+    color: #5595E8;
+}
+.rectangulo{
+    position: absolute;
+    width: 80px;
+    height: 75vh;
+    background-color: #117E9F;
+    left: 75%;
+    z-index: -1;
+}
+
+.bg-software{
+    position: relative;
+    background-color: #EDF4FD;
+    z-index: 10;
+}
+.rectangulo-software{
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color: #117E9F;
+    top: 50%;
+    /* left: 75%; */
+    z-index: -1;
+}
+.img-mas-nosotros{
+    width: 450px;
+}
+.bg-footer{
+    background: url(../media/Footer.png);
+    background-position: center;
+    background-size: cover;
+}
+
+@media(max-width: 400px){
+    .rectangulo{
+        height: 38vh;
+        left: 8%;
+        top: 58%;    
+    }
+    .img-mas-nosotros{
+        width: 370px;
+    }
+}
