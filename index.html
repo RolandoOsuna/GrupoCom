@@ -7,14 +7,44 @@
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="stylesheet" href="CSS/Normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>GrupoCom</title>
 </head>
 <body>
 
+    <!-- HEADER -->
+    <div id="particles-js" class="">
+        <img class="img-fluid logo " src="media/LogoGrupoCom.png" width="500px">
+        <!-- <nav class="navb row margen d-flex justify-content-center d-block d-lg-none " > 
+            <ul class="navb text-end">
+                <button class="btn btn-menu navbar-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Proyectos</a></li>
+            </ul>
+        </nav> -->
+
+        <nav class="navb row margen d-flex justify-content-center d-none d-lg-block ">
+            <ul class="navb text-center">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Proyectos</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <!-- NUESTRAS AREAS -->
     <section >
         <div class="row d-flex align-items-center">
-        <div class="rectangulo"></div>
+        <div class="rectangulo d-none d-md-block"></div>
             <div class="col-12 col-md-6 col-lg-5  p-3">
                 <h1 class="display-6 fw-bold text-titulo text-center">Nuestras Areas</h1>
                 <p class="fs-3  ms-3">Somos expertos en negocios que buscan:</p>
@@ -28,7 +58,7 @@
                 </ul>
             </div>
             <aside class="col-12 col-md-6 col-lg-7 text-center pb-3 pt-2 p-lg-0">
-                <img class="img-fluid " src="media/Nuestras Areas.jpg" width="650px" >
+                <img class="img-fluid " src="media/Nuestras Areas.jpg" width="650px" data-aos="flip-right" >
             </aside>
         </div>
         <div class="row px-4 position-relative py-3">
@@ -45,8 +75,8 @@
         </div>
         <div class="row justify-content-around px-4 px-md-5">
             <!-- CRM -->
-            <div class="col-12 col-md-4 "> 
-                <div class="m-lg-3 rounded shadow bg-light">
+            <div class="col-12 col-md-4 "data-aos="fade-up-right"> 
+                <div class="m-lg-3 rounded shadow bg-light" >
                     <div class="row">
                         <img src="media/logo-software-1.png" alt="" class="img-fluid">
                     </div>
@@ -58,10 +88,10 @@
                 </div>
             </div>
             <!-- PUNTO DE VENTA -->
-            <div class="col-12 col-md-4 my-3"> 
+            <div class="col-12 col-md-4 my-3"data-aos="zoom-in"> 
                 <div class=" rounded shadow bg-light">
                     <div class="row">
-                        <img src="media/logo-software-2.png" alt="" class="img-fluid">
+                        <img src="media/logo-software-2.png" alt="" class="img-fluid" >
                     </div>
                     <div class="row text-center">
                         <h3 class="pt-2">Punto de Venta</h3>
@@ -71,7 +101,7 @@
                 </div>
             </div>
             <!-- FACTURACION -->
-            <div class="col-12 col-md-4 "> 
+            <div class="col-12 col-md-4 " data-aos="fade-up-left"> 
                 <div class="m-lg-3 rounded shadow bg-light">
                     <div class="row">
                         <img src="media/facturacion.png" alt="" class="img-fluid">
@@ -95,12 +125,12 @@
                 <p class="fs-5">Gracias al Web Marketing Movil Negocios TI Diseños, hemos desarrollado una red de relaciones y contactos en Mazatlán Sinaloa, que desde 2005, nos han brindado su apoyo y confianza, lo cual nos permite ofrecerle tranquilidad y seguridad en la maquetación e integración de sitios web y software a la medida.</p>
             </div>
             <div class="col text-center text-md-end">
-                <img src="media/med-badr-chemmaoui-ZSPBhokqDMc-unsplash.jpg" class=" img-mas-nosotros">
+                <img src="media/med-badr-chemmaoui-ZSPBhokqDMc-unsplash.jpg" class="thumbnail img-mas-nosotros">
             </div>
         </div>
         <div class="row align-items-center">
             <div class="col  d-none d-md-block">
-                <img src="media/lukas-blazek-mcSDtbWXUZU-unsplash.jpg" class=" img-mas-nosotros">
+                <img src="media/lukas-blazek-mcSDtbWXUZU-unsplash.jpg" class="thumbnail img-mas-nosotros">
             </div>
             <div class="col-12 col-md-5 text-end  pe-md-5" >
                 <h1 class="" style="color: #5595E8;">Web Marketing Movil Negocios TI Diseños</h1>
@@ -140,5 +170,16 @@
     </footer>
 
 <script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/particles.min.js"></script>
+<script src="JS/app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script>
+    var image = document.getElementsByClassName('thumbnail');
+    new simpleParallax(image);
+</script>
 </body>
 </html>

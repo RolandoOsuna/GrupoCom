@@ -1,7 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
 body{
     font-family: 'Montserrat', Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+#particles-js{
+    position:relative;
+    background-color: #000;
+    height: 100vh;
+    
+}
+.logo{
+    position: absolute;
+    width:500px;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0 0 -200px;
+    filter: drop-shadow(0px 3px 3px rgba(255, 255, 255, 0.831));
+    z-index: 100;
+}
+.navb {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 6%;
+    /* margin: -308px 0 0 -210px; */
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .navb * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+
+  .navb li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    /* paddin: 0; */
+  }
+
+  .navb a {
+    padding: .5em .8em;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .navb a::before,
+  .navb a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+
+  .navb a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #047cfc;
+    border-right: 3px solid #0484fc;
+    transform: translate(-100%, 50%);
+  }
+
+  .navb a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #047cfc;
+    border-left: 3px solid #0484fc;
+    transform: translate(100%, -50%)
+  }
+
+  .navb a:hover:before,
+  .navb a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+
+  .navb a:hover {
+    color: #04a1fc;
+  }
+
 .text-titulo{
     color: #5595E8;
 }
