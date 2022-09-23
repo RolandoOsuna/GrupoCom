@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/Normalize.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/estilosss.css">
+	<link rel="stylesheet" href="CSS/style-contacto.css">
+	<link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <title>Contácto</title>
+</head>
+<body>
+    <header id="header">
+	    <nav class="menu">
+	    	<div class="logo">
+	    		<a class="logo-mouse"><img src="imagenes/Favicon/LogoWebGrupoCom.png" alt="LogoGrupoCom"><!-- GrupoCom--></a>
+	    		<a class="btn-menu" id="btn-menu"><i class="icono fa fa-bars" aria-hidden="true"></i></a>
+	        </div>
+
+	    	<div class="enlaces" id="enlaces">
+	    		<a href="/"><i class="" aria-hidden="true"></i> Inicio</a>
+	    		<a href="servicios.html"><i class="" aria-hidden="true"></i> Servicios</a>
+	    		<a href="contacto.html" class="activo"><i class="fa fa-envelope" aria-hidden="true"></i> Contacto</a>
+	    	</div>
+	    </nav>
+	</header>
+
+	<!-- PORTADA -->
+	<div class="caja-contacto">
+		<section class="imagen-contacto"></section>
+		<!-- <h1 class="centrar-texto texto-contacto">Contactanos</h1> -->
+	</div>
+
+	<!-- CONTENIDO CONTACTO -->
+	<section class="main-contacto container">
+		<h2 class="local centrar-texto">¡ES HORA! NO ESPERES MAS Y VISITANOS YA</h2><br>
+		<div class="row">
+			<div class="col-xl-4 col-lg-6 col-md-7 col-sm-12">
+				<section>
+					<h2 class="local">Estamos ubicados en:</h2>
+					<p class="contenedor seccion p-contacto">
+						<i class="fa fa-map-marker" aria-hidden="true"></i> Avenida Aquiles Serdán 1007-int. 3 Col. Centro<br>
+				    	<i class="fa fa-phone" aria-hidden="true"></i> 694 110 2012<br>
+				    	<i class="fa fa-envelope" aria-hidden="true"></i> ventas@grupocom.com.mx<br>
+				    	<i class="fa fa-envelope" aria-hidden="true"></i> grupocom2003@gmail.com<br>
+					</p>		
+				</section>
+			</div>
+			<div class="col-xl-7 col-lg-5 col-md-4 col-sm-12 google-maps">
+					<!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.6328985124273!2d-106.40305868507635!3d23.25644208483505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f5359053a755b%3A0x302583bbbbed084d!2sGrupoCom!5e0!3m2!1ses!2smx!4v1565915260842!5m2!1ses!2smx" frameborder="0" style="border:0" allowfullscreen></iframe -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.203658660469!2d-106.41985638751298!3d23.19724677524365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f5359053a755b%3A0x302583bbbbed084d!2sgrupocom!5e0!3m2!1ses-419!2smx!4v1626380434384!5m2!1ses-419!2smx" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
+			</div>
+		</div>
+	</section>
+
+	<!-- BOTON MENSAJE FLOTANTE -->
+	<div class="btn-correo">
+		<a id="abrir">
+			<img src="imagenes/Btn-Flotantes/logo-email.png" alt="Correo Electronico">
+		</a>
+	</div>
+	<form class="mensaje" action="enviar.php" method="post">
+		<div id="miModal" class="modal">
+			<div class="flex" id="flex">
+				<div class="contenido-modal">
+					<div class="modal-header flex">
+						<h2>Contactanos</h2>
+						<span class="close" id="close">&times;</span>
+					</div>
+					<div class="modal-body">
+						<label for="nombre">Nombre:</label>
+						<input type="text" name="nombre" placeholder="Nombre" required>
+
+						<label for="nombre">Email:</label>
+						<input type="email" name="email" placeholder="Email" required>
+
+						<label for="mensaje">Mensaje:</label>
+						<textarea name="mensaje" placeholder="Escribe un mensaje" required></textarea>
+
+						<input class="boton-enviar boton" type="submit" name="enviar" value="Enviar">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<!-- BOTON WHATSAPP -->
+	<div class="btn-whatsapp">
+		<a href="https://api.whatsapp.com/send?phone=526941102012&text=Hola,%20quiero%20información%20sobre:%20" target="_blank">
+			<img src="imagenes/Btn-Flotantes/logo-whatsapp.png" alt="WhatsApp">
+		</a>
+	</div>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<!-- COLUMNA #1 -->
+				<div class="col-lg-5 col-md-5 col-sm-12">
+					<!-- ENCABEZADO #1 -->
+	                <div class="footer-head">
+	                    <ul class="list-unstyled">
+	                        <span class="fa-2x">
+	                            <i class="fa fa-usb fa-lg"></i>
+	                            Sobre <span class="footer-titulos">GRUPOCOM</span>
+	                        </span>
+	                    </ul>
+	                </div>
+	                <div class="columna-1">
+	                	<p>Somos una empresa experta en tecnología que ayuda a la transformación digital de los negocios y personas. Proporcionamos <strong>soporte</strong> y <strong>servicios</strong> relacionados con las Tecnologías de la Información (TI) y estamos especializados en la implementación y puesta en marcha de soluciones en el ámbito del Internet como lo son la creación de paginas y sitios web.</p>
+	                </div>
+				</div>
+				<!-- COLUMNA #2 -->
+				<div class="col-lg-4 col-md-3 col-sm-12">
+					<!-- ENCABEZADO #2 -->
+	                <div class="footer-head">
+	                    <ul class="list-unstyled">
+	                        <span class="fa-2x">
+	                            <i class="fa fa-child fa-lg"></i>
+	                            Ventaja <span class="footer-titulos">ESTRATEGICA</span>
+	                        </span>
+	                    </ul>
+	                </div>
+	                <div class="columna-1">
+	                	<ul>
+							<li>Experiencia</li>
+							<li>Confianza</li>
+							<li>Transparencia</li>
+							<li>Ética</li>
+							<li>Seguridad</li>
+							<li>Eficiencia</li>
+						</ul>
+	                </div>
+				</div>
+				<!-- COLUMNA #3 -->
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<!-- ENCABEZADO #3 -->
+	                <div class="footer-head">
+	                    <ul class="list-unstyled">
+	                        <span class="fa-2x">
+	                            <i class="fa fa-cogs fa-lg"></i>
+	                            Otros <span class="footer-titulos">SOPORTES</span>
+	                        </span>
+	                    </ul>
+	                </div>
+	                <div class="columna-1">
+	                	<ul>
+							<li>Mantenimiento</li>
+							<li>Redes</li>
+							<li>Circuito cerrado de tv</li>
+							<li>Alarmas</li>
+						</ul>
+	                </div>
+				</div>
+			</div>
+		</div>
+		<div class="sub-footer">
+			<span class="copyright">Todos los derechos reservados 2021 &copy; | <img src="imagenes/Favicon/quetzalcoat.png"> ¡Atención personalizada por expertos!</span>
+		</div>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/headroom.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
