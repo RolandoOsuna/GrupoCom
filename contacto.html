@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/Normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <title>Contácto</title>
+</head>
+<body>
+    <header>
+
+	    	<div class="" id="">
+	    		<a href="index.html"><i class="" aria-hidden="true"></i> Inicio</a>
+	    		<a href=""><i class="" aria-hidden="true"></i> Servicios</a>
+	    		<a href="contacto.html" class="activo"><i class="fa fa-envelope" aria-hidden="true"></i> Contacto</a>
+	    	</div>
+	    </nav>
+	</header>
+
+	<!-- PORTADA -->
+	<div class="caja-contacto">
+		<section class="imagen-contacto"></section>
+		<!-- <h1 class="centrar-texto texto-contacto">Contactanos</h1> -->
+	</div>
+
+	<!-- CONTENIDO CONTACTO -->
+	<section class="main-contacto container">
+		<h2 class="local centrar-texto">¡ES HORA! NO ESPERES MAS Y VISITANOS YA</h2><br>
+		<div class="row">
+			<div class="col-xl-4 col-lg-6 col-md-7 col-sm-12">
+				<section>
+					<h2 class="local">Estamos ubicados en:</h2>
+					<p class="contenedor seccion p-contacto">
+						<i class="fa fa-map-marker" aria-hidden="true"></i> Avenida Aquiles Serdán 1007-int. 3 Col. Centro<br>
+				    	<i class="fa fa-phone" aria-hidden="true"></i> 694 110 2012<br>
+				    	<i class="fa fa-envelope" aria-hidden="true"></i> ventas@grupocom.com.mx<br>
+				    	<i class="fa fa-envelope" aria-hidden="true"></i> grupocom2003@gmail.com<br>
+					</p>		
+				</section>
+			</div>
+			<div class="col-xl-7 col-lg-5 col-md-4 col-sm-12 google-maps">
+					<!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.6328985124273!2d-106.40305868507635!3d23.25644208483505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f5359053a755b%3A0x302583bbbbed084d!2sGrupoCom!5e0!3m2!1ses!2smx!4v1565915260842!5m2!1ses!2smx" frameborder="0" style="border:0" allowfullscreen></iframe -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.203658660469!2d-106.41985638751298!3d23.19724677524365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f5359053a755b%3A0x302583bbbbed084d!2sgrupocom!5e0!3m2!1ses-419!2smx!4v1626380434384!5m2!1ses-419!2smx" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
+			</div>
+		</div>
+	</section>
+
+	<!-- BOTON MENSAJE FLOTANTE -->
+	<div class="btn-correo">
+		<a id="abrir">
+			<img src="imagenes/Btn-Flotantes/logo-email.png" alt="Correo Electronico">
+		</a>
+	</div>
+	<form class="mensaje" action="enviar.php" method="post">
+		<div id="miModal" class="modal">
+			<div class="flex" id="flex">
+				<div class="contenido-modal">
+					<div class="modal-header flex">
+						<h2>Contactanos</h2>
+						<span class="close" id="close">&times;</span>
+					</div>
+					<div class="modal-body">
+						<label for="nombre">Nombre:</label>
+						<input type="text" name="nombre" placeholder="Nombre" required>
+
+						<label for="nombre">Email:</label>
+						<input type="email" name="email" placeholder="Email" required>
+
+						<label for="mensaje">Mensaje:</label>
+						<textarea name="mensaje" placeholder="Escribe un mensaje" required></textarea>
+
+						<input class="boton-enviar boton" type="submit" name="enviar" value="Enviar">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<!-- BOTON WHATSAPP -->
+	<div class="btn-whatsapp">
+		<a href="https://api.whatsapp.com/send?phone=526941102012&text=Hola,%20quiero%20información%20sobre:%20" target="_blank">
+			<img src="imagenes/Btn-Flotantes/logo-whatsapp.png" alt="WhatsApp">
+		</a>
+	</div>
+
+	<!-- FOOTER -->
+	<footer class="bg-footer">
+        <div class="container">
+            <div class="row justify-content-around py-4">
+                <div class="col-12 col-md-4">
+                    <h3 class="text-white">Sobre <span class="text-muted">GRUPOCOM</span></h3>
+                    <p class="text-white">Somos una empresa experta en tecnología que ayuda a la transformación digital de los negocios y personas. Proporcionamos soporte y servicios relacionados con las Tecnologías de la Información (TI) y estamos especializados en la implementación y puesta en marcha de soluciones en el ámbito del Internet como lo son la creación de paginas y sitios web.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="text-white">Ventajas <span class="text-muted">ESTRATEGICA</span></h3>
+                    <p class="text-white">Experiencia <br> Confianza <br> Transparencia <br> Ética <br> Seguridad <br> Experiencia</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h3 class="text-white">Otros <span class="text-muted">SOPORTES</span></h3>
+                    <p class="text-white">Mantenimiento <br> Redes <br> Circuito cerrado de tv <br> Alarmas <br> </p>
+                </div>
+            </div>
+        </div>
+        <div class="row text-white justify-content-center align-items-center" style="background-color: #2D3F51;">
+            <div class="col-md-3 text-center text-md-end ">
+                Todos los derechos reservados 2021 &copy;
+            </div>
+            <div class="col-md-1 text-center text-md-center">
+                <img src="media/quetzalcoat.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-3 text-center text-md-start">
+                ¡Atencion personalizada por expertos!
+            </div>
+        </div>
+    </footer>
+
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/particles.min.js"></script>
+<script src="JS/app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
