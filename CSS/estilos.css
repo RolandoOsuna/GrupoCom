@@ -134,6 +134,81 @@ body{
   background-position: center;
   background-size: cover;
 }
+/* PAGINA DE CONTÁCTO */
+.header{
+  background-image: url(../media/contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.google-maps {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+	border: 3px solid black;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+@media (min-width: 1025px){
+	.google-maps{
+		padding-bottom: 30%;
+	}
+}
+/* PÁGINA DE SETVICIOS */
+.bg-navbar{
+  background-color: #afd4d3;
+}
+.titulo-1{
+  color: #117E9F;
+}
+.titulo-2{
+  color: #04a1fc;
+}
+.titulo-3{
+  color: #0484fc;
+}
+/* CARRUSEL */
+.carrusel{
+  display: flex;
+  align-items: center;
+}
+.carrusel-items{
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 30px 0;
+}
+.carrusel-item{
+  max-width: 400px;
+  min-width: 400px;
+  margin: 0 5px;
+}
+.carrusel-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.carrusel-item:hover{
+  transform: scale(1.2);
+}
+@media (max-width: 780px) {
+  .carrusel-item img{
+      width: 100%;
+      height: 100%;
+  }
+  .carrusel-item{
+      max-width: 180px;
+      min-width: 180px;
+      margin: 0 5px;
+  }
+}
 
 @media(max-width: 400px){
   .rectangulo{
