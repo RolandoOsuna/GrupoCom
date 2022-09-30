@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /index.html
+Allow: /servicios.html
+Allow: /contacto.html
+
+Sitemap: https://grupocom.mx/sitemap.xml

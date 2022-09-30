@@ -24,12 +24,12 @@ body{
 .ml13 {
   font-size: 1.5em;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: 300;
+  /* letter-spacing: 0.2em; */
+  /* font-weight: 300; */
 }
 .ml13 .letter {
   /* display: inline-block; */
-  line-height: 1em;
+  /* line-height: 1em; */
 }
 /* NAVBAR */
 .navb {
