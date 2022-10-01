@@ -8,6 +8,11 @@ body{
   background-color: #000;
   height: 100vh;   
 }
+/* #particles-js-navbar{
+  position:relative;
+  background-color: #000;
+
+} */
 /* LOGO */
 .logo{
   position: absolute;
@@ -22,7 +27,7 @@ body{
 }
 /* TITULO HEADER */
 .ml13 {
-  font-size: 1.5em;
+  font-size: 2.5rem;
   text-transform: uppercase;
   /* letter-spacing: 0.2em; */
   /* font-weight: 300; */
@@ -95,7 +100,11 @@ body{
   color: #04a1fc;
 }
 
-
+.navbar-dark .navbar-toggler {
+  color: rgba(255,255,255,.55);
+  border-color: rgba(255,255,255,.1);
+  border: 0;
+}
 
 
 .text-titulo{
@@ -163,6 +172,10 @@ body{
 /* PÁGINA DE SETVICIOS */
 .bg-navbar{
   background-color: #afd4d3;
+  
+}
+.bg-navbar-inicio{
+  background-color: #fff;
 }
 .titulo-1{
   color: #117E9F;
@@ -216,11 +229,24 @@ body{
       left: 8%;
       top: 58%;    
   }
+  .navb a {
+    padding: .5em .8em;
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
   .img-mas-nosotros{
       width: 370px;
   }
   .logo{
     margin: -250px 0 0 -200px;
     width:auto;
+  }
+  .logo img{
+    width: 90%;
+  }
+  .ml13{
+    font-size: 2rem;
   }
 }
