@@ -8,11 +8,16 @@ body{
   background-color: #000;
   height: 100vh;   
 }
-/* #particles-js-navbar{
-  position:relative;
-  background-color: #000;
+.btn-flotante{
+  width: 200px;
+  height: 5vh;
+  background-color: #25D366;
+  color: white;
+  border-radius: 4rem;
+  left: 80%;
+  bottom: 3%;
+}
 
-} */
 /* LOGO */
 .logo{
   position: absolute;
@@ -223,7 +228,7 @@ body{
   }
 }
 
-@media(max-width: 400px){
+@media(max-width: 868px){
   .rectangulo{
       height: 38vh;
       left: 8%;
@@ -240,7 +245,7 @@ body{
       width: 370px;
   }
   .logo{
-    margin: -250px 0 0 -200px;
+    margin: -150px 0 0 -200px;
     width:auto;
   }
   .logo img{
@@ -248,5 +253,13 @@ body{
   }
   .ml13{
     font-size: 2rem;
+  }
+  .btn-flotante{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: white;
+    background-color: #25D366;
+    /* left: 51%;    */
   }
 }

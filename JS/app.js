@@ -132,3 +132,13 @@ anime.timeline({loop: true})
     duration: 1200,
     delay: (el, i) => 100 + 30 * i
 });
+
+
+// Look for .hamburger
+var hamburger = document.querySelector(".hamburger");
+// On click
+hamburger.addEventListener("click", function() {
+  // Toggle class "is-active"
+  hamburger.classList.toggle("is-active");
+  // Do something else, like open/close menu
+});
