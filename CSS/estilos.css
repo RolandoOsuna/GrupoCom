@@ -8,14 +8,30 @@ body{
   background-color: #000;
   height: 100vh;   
 }
-.btn-flotante{
+.btn-flotante.WA.Mail{
   width: 200px;
   height: 5vh;
+  /* background-color: #25D366;
+  color: white; */
+  /* left: 80%;
+  bottom: 3%; */
+}
+.WA{
   background-color: #25D366;
   color: white;
-  border-radius: 4rem;
   left: 80%;
   bottom: 3%;
+  border-radius: 4rem;
+}
+.Mail{
+  background-color: #FAAB29;
+  color: black;
+  left: 80%;
+  bottom: 10%;
+  border-radius: 4rem;
+}
+.Mail img{
+  width: 40px;
 }
 
 /* LOGO */
@@ -258,8 +274,25 @@ body{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    color: white;
-    background-color: #25D366;
+    /* color: white;
+    background-color: #25D366; */
     /* left: 51%;    */
+  }
+  .WA{
+    background-color: #25D366;
+    color: white;
+    left: 80%;
+    bottom: 3%;
+    border-radius: 4rem;
+  }
+  .Mail{
+    background-color: #FAAB29;
+    color: black;
+    left: 80%;
+    bottom: 12%;
+    border-radius: 4rem;
+  }
+  .Mail img{
+    width: 50px;
   }
 }
